@@ -954,3 +954,12 @@ require('lazy').setup({
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
+--
+---- Kickstart Configuration for Neovim
+
+-- Other configurations...
+
+-- Custom key mapping for changing working directory
+vim.api.nvim_set_keymap('n', '<leader>cd', ':cd %:h<CR>', { noremap = true, silent = true })
+
+-- More configurations...
